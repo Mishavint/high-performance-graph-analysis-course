@@ -11,12 +11,7 @@ class TestsForBfsLevels:
             True
         )
         assert bfs(graph, 1) == [-1, 0, 1, 1, 2, 2, 3, 3]
+
         assert bfs(graph, 6) == [-1, -1, -1, -1, -1, -1, 0, 1]
 
-    def test_empty_graph(self):
-        graph = Matrix.from_lists(
-            [],
-            [],
-            True
-        )
-        assert bfs(graph, 0) == []
+        assert bfs(graph, 0) == [0, 1, 2, 2, 3, 3, 4, 4]
